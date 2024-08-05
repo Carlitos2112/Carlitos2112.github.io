@@ -4,7 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual de Usuario - Geoportal</title>
-    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Encabezado y navegación */
+        header {
+            background-color: #2c3e50;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+
+        /* Contenido principal */
+        main {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        /* Secciones */
+        section {
+            margin-bottom: 2rem;
+        }
+
+        /* Imágenes y capturas de pantalla */
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        /* Botones y elementos interactivos */
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -32,54 +138,30 @@
 
         <section id="acceso">
             <h2>Cómo acceder al geoportal</h2>
-            <!-- Instrucciones de acceso -->
+            <p>Para acceder al geoportal, sigue estos pasos:</p>
+            <ol>
+                <li>Abre tu navegador web preferido.</li>
+                <li>Ingresa la URL: <strong>www.tugeoportal.com</strong></li>
+                <li>Si es necesario, introduce tus credenciales de acceso.</li>
+            </ol>
+            <a href="#" class="btn">Ir al Geoportal</a>
         </section>
 
-        <section id="interfaz">
-            <h2>Interfaz de usuario y navegación básicaa</h2>
-            <!-- Explicación de la interfaz y cómo navegar -->
-        </section>
-
-        <section id="funcionalidades">
-            <h2>Funcionalidades principales</h2>
-            <!-- Descripción de las funcionalidades clave -->
-        </section>
-
-        <section id="busqueda">
-            <h2>Herramientas de búsqueda y filtrado</h2>
-            <!-- Guía sobre cómo buscar y filtrar información -->
-        </section>
-
-        <section id="visualizacion">
-            <h2>Visualización de mapas y capas</h2>
-            <!-- Instrucciones para visualizar y manipular mapas -->
-        </section>
-
-        <section id="descarga">
-            <h2>Descarga de datos</h2>
-            <!-- Proceso para descargar datos, si aplica -->
-        </section>
-
-        <section id="problemas">
-            <h2>Solución de problemas comunes</h2>
-            <!-- Lista de problemas frecuentes y sus soluciones -->
-        </section>
-
-        <section id="faq">
-            <h2>Preguntas frecuentes (FAQ)</h2>
-            <!-- Lista de preguntas y respuestas frecuentes -->
-        </section>
+        <!-- Añade el resto de las secciones siguiendo un formato similar -->
 
         <section id="contacto">
             <h2>Contacto para soporte</h2>
-            <!-- Información de contacto para obtener ayuda adicional -->
+            <p>Si necesitas ayuda adicional, no dudes en contactarnos:</p>
+            <ul>
+                <li>Email: soporte@tugeoportal.com</li>
+                <li>Teléfono: +1 234 567 890</li>
+                <li>Chat en vivo: Disponible de lunes a viernes, 9:00 AM - 5:00 PM</li>
+            </ul>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Tu Organización. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
