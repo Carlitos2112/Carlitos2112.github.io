@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario - Geoportal</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #13322B;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #D4C19C;
+        }
+
+        /* Encabezado y navegación */
+        header {
+            background-color: #285C4D;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: #D4C19C;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #9D2449;
+        }
+
+        /* Contenido principal */
+        main {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(78, 35, 46, 0.1);
+        }
+
+        h1, h2 {
+            color: #285C4D;
+            text-align: center;
+        }
+
+        h1 {
+            border-bottom: 2px solid #9D2449;
+            padding-bottom: 10px;
+        }
+
+        /* Secciones */
+        section {
+            margin-bottom: 2rem;
+        }
+
+        /* Imágenes y capturas de pantalla */
+        .imagen-ejemplo {
+            display: block;
+            max-width: 80%;
+            height: auto;
+            margin: 1rem auto;
+            border: 1px solid #B38E5D;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(78, 35, 46, 0.1);
+        }
+
+        .imagen-grande {
+            max-width: 90%;
+        }
+
+        /* Botones y elementos interactivos */
+        .btn {
+            display: block;
+            width: 200px;
+            background-color: #285C4D;
+            color: #D4C19C;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            text-align: center;
+            margin: 1rem auto;
+        }
+
+        .btn:hover {
+            background-color: #13322B;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #285C4D;
+            color: #D4C19C;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#interfaz">Interfaz</a></li>
+                <li><a href="#acceso">Acceso</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduccion">
+            <h1>Manual de Usuario del Geoportal</h1>
+            <p>Bienvenido al manual de usuario de nuestro geoportal. Aquí encontrarás toda la información necesaria para utilizar eficientemente nuestra plataforma.</p>
+        </section>
+
+        <section id="interfaz">
+            <h2>Interfaz de usuario y navegación básica</h2>
+            <p>La interfaz del geoportal está diseñada para ser intuitiva y fácil de usar. Aquí te explicamos los elementos principales:</p>
+            
+            <h3>1. Herramienta de trazado de polígonos</h3>
+            <p>Esta herramienta permite habilitar la opción para trazar el polígono de nuestra área de interés. Utilizando esta función, podrás delinear específicamente la región que deseas analizar en el mapa.</p>
+            <img src="../html/ayuda/1ayuda.jpg" alt="Herramienta de trazado de polígonos" class="imagen-ejemplo">
+
+            <h3>2. Selección del área de interés</h3>
+            <p>Una vez que hayas hecho clic en el botón "Dibujar Área", aparecerán dos opciones en la pantalla. Debes seleccionar la opción que está encerrada en un cuadrado de color rojo para comenzar a definir tu área de interés.</p>
+            <img src="../html/ayuda/2 recorte.PNG" alt="Selección del área de interés" class="imagen-ejemplo imagen-grande">
+
+            <h3>3. Ingreso de fechas</h3>
+            <p>Después de dibujar el área, debes ingresar la fecha de inicio y final del periodo que deseas evaluar. Asegúrate de usar el formato correcto para las fechas: (YYYY-MM-DD). Esto permitirá que el sistema sepa exactamente qué intervalo de tiempo deseas analizar.</p>
+            <img src="../html/ayuda/3_recorte.PNG" alt="Ingreso de fechas" class="imagen-ejemplo">
+            
+            <p>A continuación, te mostramos un ejemplo de cómo ingresar las fechas correctamente en el formato requerido (YYYY-MM-DD).</p>
+            <img src="../html/ayuda/4_recorte.PNG" alt="Ejemplo de ingreso de fechas" class="imagen-ejemplo">
+
+            <h3>4. Selección del tipo de índice</h3>
+            <p>Con las fechas correctamente ingresadas, el siguiente paso es seleccionar el tipo de índice que deseas utilizar para tu análisis. Podrás elegir entre índices normalizados y no normalizados. Si aparecen ambas opciones, selecciona la que más se ajuste a tus necesidades.</p>
+            <img src="../html/ayuda/5_recorte.png" alt="Selección del tipo de índice" class="imagen-ejemplo imagen-grande">
+
+            <h3>5. Procesamiento de datos</h3>
+            <p>Una vez que hayas completado todos los pasos anteriores, solo te quedará presionar el botón con la leyenda "Procesar". Este botón iniciará el proceso basado en las configuraciones que seleccionaste anteriormente, y el sistema comenzará a analizar el área y el periodo que especificaste.</p>
+            <img src="../html/ayuda/6_recorte.PNG" alt="Botón de procesamiento" class="imagen-ejemplo">
+        </section>
+
+        <section id="acceso">
+            <a href="https://www.google.com" class="btn">Ir al Geoportal</a>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto para soporte</h2>
+            <p>Si necesitas ayuda adicional, no dudes en contactarnos:</p>
+            <ul>
+                <li>Email: soporte@tugeoportal.com</li>
+                <li>Teléfono: +1 234 567 890</li>
+                <li>Chat en vivo: Disponible de lunes a viernes, 9:00 AM - 5:00 PM</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tu Organización. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
